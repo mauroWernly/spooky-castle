@@ -10,9 +10,35 @@
     <link rel="stylesheet" href="css/spooky-castle.css">
 </head>
 <body>
-    
+    <div class="container container-shape">
+        <div class="star-container position-relative">
+            <div class="star s1 position-absolute"></div>
+            <div class="star s2 position-absolute"></div>
+            <div class="star s3 position-absolute"></div>
+            <div class="star s4 position-absolute"></div>
+            <div class="star s5 position-absolute"></div>
+            <div class="star s6 position-absolute"></div>
+            <div class="star s7 position-absolute"></div>
+            <div class="star s8 position-absolute"></div>
+            <div class="star s9 position-absolute"></div>
+            <div class="star s10 position-absolute"></div>
+        </div>
+        <div class="moon"></div>
+            <div class="castle">
+                <img class="inject-me" src="img/background.svg">
+            </div>
+    </div>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/svg-injector.min.js"></script>
     <script src="js/spooky-castle.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+    // Elements to inject
+    var mySVGsToInject = document.querySelectorAll('img.inject-me');
+    
+    // Do the injection
+    SVGInjector(mySVGsToInject);
+    </script>
 </body>
 </html>

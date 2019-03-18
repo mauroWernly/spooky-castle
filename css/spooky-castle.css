@@ -1,0 +1,129 @@
+#svg2{
+    position: absolute;
+    bottom: auto;
+    top: 10px;
+    right: auto;
+    left: 65px;
+}
+
+.moon{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #dfceba;
+    top: 60px;
+    bottom: auto;
+    left: 150px;
+    right: auto;
+    transition: all .5s ease;
+    box-shadow: 0px 0px 0px transparent;
+    transform: translate(-450px, 200px);
+}
+
+body:hover .moon{
+    box-shadow: 0px 0px 50px #f4f8dcb0;
+    transform: translate(0,0);
+}
+
+.container-shape{
+    height: 600px;
+    width: 600px;
+    border-radius: 300px;
+    background-image: linear-gradient(#233c68, #274374);
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+#path280,
+#path292,
+#path300,
+#path272,
+#path264{
+    transition: all .4s ease;
+    transform: scale(0);
+}
+
+body:hover #path280,
+body:hover #path292,
+body:hover #path300,
+body:hover #path272,
+body:hover #path264{
+    transform: scale(1);
+}
+
+@keyframes blink{
+    /* from{
+        fill:#ffea48;
+    }
+    to{
+        fill: #f6b10f;
+    } */
+    0%   {fill:#ffea48;}
+    25%  {fill:#ffea48;}
+    50%  {fill:#f6b10f;}
+    65%  {fill:#ffea48;}
+    75%  {fill:#f6b10f;}
+    100% {fill:#ffea48;}
+}
+
+body:hover #path288{
+    animation-name: blink;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+
+.star-container{
+    top: 240px;
+    left: 290px;
+}
+
+.star{
+    width: 3px;
+    height: 3px;
+    display: block;
+    border-radius: 3px;
+    background-color: #dfceba;
+}
+
+.s1{
+    top: -140px;
+    left: -90px;
+}
+.s2{
+    top: -40px;
+    left: -185px;
+}
+.s3{
+    top: 10px;
+    left: -270px;
+}
+.s4{
+    top: 170px;
+    left: -230px;
+}
+.s5{
+    top: -200px;
+    left: -30px;
+}
+.s6{
+    top: -100px;
+    left: 70px;
+}
+.s7{
+    top: 20px;
+    left: 150px;
+}
+.s8{
+    top: 225px;
+    left: 190px;
+}
+.s9{
+    top: 100px;
+    left: 260px;
+}
+.s10{
+    top: 0px;
+    left: 0px;
+}
