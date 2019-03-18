@@ -43,6 +43,7 @@ body:hover .moon{
 #path264{
     transition: all .4s ease;
     transform: scale(0);
+    transition-delay: .2s;
 }
 
 body:hover #path280,
@@ -77,6 +78,12 @@ body:hover #path288{
 .star-container{
     top: 240px;
     left: 290px;
+    transition: all .3s ease;
+    transform: rotate(-45deg);
+}
+
+body:hover .star-container {
+    transform: rotate(0deg);
 }
 
 .star{
@@ -85,6 +92,8 @@ body:hover #path288{
     display: block;
     border-radius: 3px;
     background-color: #dfceba;
+    box-shadow: 0px 0px 6px rgba(244, 248, 220, 0.46);
+    
 }
 
 .s1{
