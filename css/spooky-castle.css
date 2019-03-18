@@ -136,3 +136,21 @@ body:hover .star-container {
     top: 0px;
     left: 0px;
 }
+
+@keyframes thunder {
+    0%  {fill:#190024;}
+    50% {fill:#190024;}
+    55% {fill:#9c7bac;}
+    60% {fill:#190024;}
+    65% {fill:#9c7bac;}
+    85% {fill:#190024;}
+    100%{fill:#190024;}
+}
+
+body:hover #path306,
+body:hover #path330{
+    animation-name: thunder;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
