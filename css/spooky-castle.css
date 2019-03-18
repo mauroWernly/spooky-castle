@@ -55,12 +55,6 @@ body:hover #path264{
 }
 
 @keyframes blink{
-    /* from{
-        fill:#ffea48;
-    }
-    to{
-        fill: #f6b10f;
-    } */
     0%   {fill:#ffea48;}
     25%  {fill:#ffea48;}
     50%  {fill:#f6b10f;}
