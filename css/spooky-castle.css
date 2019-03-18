@@ -151,6 +151,30 @@ body:hover #path306,
 body:hover #path330{
     animation-name: thunder;
     animation-duration: 1s;
-    animation-delay: 3s;
-    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes thunder-appear{
+    0%  {opacity: 0;}
+    50% {opacity: 0;}
+    55% {opacity: 1;}
+    60% {opacity: 0;}
+    65% {opacity: 1;}
+    85% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.thunder-container .thunder-img{
+    opacity: 0;
+    top: -15px !important;
+    width: 300px;
+    height: auto;
+    bottom: auto;
+    z-index: 2;
+}
+
+body:hover .thunder-img{
+    animation-name: thunder-appear;
+    animation-duration: 1s;
+    animation-delay: 1s;
 }
